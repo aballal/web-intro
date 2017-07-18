@@ -13,7 +13,7 @@ $gem install shotgun
 Run this from the terminal
 
 ```
-$shotgun app.rb
+$shotgun app.rb -p 4567
 ```
 
 See the resulting web page on
