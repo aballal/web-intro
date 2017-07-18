@@ -1,9 +1,14 @@
-<H1>
-  <%if @name%>
+<h1>
+  <% if @name%>
   My name is <%= @name%>
-  <%end%>
-</H1>
+  <% else %>
+  <form action='/named-cat'>
+    <input type="text", name="name">
+    <input type="submit", value="Submit">
+  </from>
+  <% end %>
+</h1>
 
-<DIV>
-<IMG style = 'border:2px; border-style:dashed; border-color: <%= @color %>' src = 'http://bit.ly/1eze8aE'>
-</DIV>
+<div>
+<img style = 'border:2px; border-style:dashed; border-color: <%= @color %>' src = 'http://bit.ly/1eze8aE'>
+</div>
